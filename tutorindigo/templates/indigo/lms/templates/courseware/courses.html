@@ -31,7 +31,7 @@
 </%block>
 % endif
 
-<%block name="pagetitle">${_("Courses")}</%block>
+<%block name="pagetitle">${_("Cursos")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="find-courses">
@@ -55,8 +55,8 @@
                   </svg>
               </a>
               <div class="dropdown-menu search-facets-lists" aria-labelledby="dropdownMenuLink">
-                  <aside aria-label="${_('Refine Your Search')}" class="search-facets phone-menu">
-                    <h2 class="header-search-facets">${_('Refine Your Search')}</h2>
+                  <aside aria-label="${_('Volver a busquedar')}" class="search-facets phone-menu">
+                    <h2 class="header-search-facets">${_('Volver a buscar')}</h2>
                     <section class="search-facets-lists">
                     </section>
                   </aside>
@@ -65,11 +65,11 @@
             <div class="discover-search">
             <div id="discovery-form" role="search" aria-label="course" class="wrapper-search-context">
               <form class="wrapper-search-input">
-                <label for="discovery-input" class="sr">${_('Search for a course')}</label>
+                <label for="discovery-input" class="sr">${_('Buscar curso')}</label>
                 <div class="button-holder">
                   <button type="submit" class="button postfix discovery-submit" title="${_('Search')}">
                     Search
-                  </button>
+                  </button>hooks
                 </div>
                 <div class="input-holder">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -87,7 +87,7 @@
       % endif
        
 
-        <div class="course-holder courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('List of Courses')}">
+        <div class="course-holder courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('LIsta de cursos')}">
           <ul class="courses-listing courses-list">
             %for course in courses:
             <li class="courses-listing-item">

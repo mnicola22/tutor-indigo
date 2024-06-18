@@ -29,10 +29,9 @@
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <ul class="logo-list">
-        <li>Powered by:</li>
         <li>
-          <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
-            <img src="${static.url('images/tutor-logo.png')}" alt="Runs on Tutor" width="57" />
+          <a href="https://www.unaj.edu.ar/" rel="noopener" target="_blank">
+            <img src="${static.url('images/uni.png')}" alt="Runs on Tutor" width="130" />
           </a>
         </li>
         <li>
@@ -42,19 +41,9 @@
         </li>
       </ul>
     </div>
-    {% if INDIGO_FOOTER_NAV_LINKS %}
-    <nav class="nav-colophon" aria-label="${_('About')}">
-      <ol>
-          {% for link in INDIGO_FOOTER_NAV_LINKS %}
-          <li>
-            <a href="{{ link['url'] }}">{{ link['title'] }}</a>
-          </li>
-          {% endfor %}
-      </ol>
-    </nav>
-    {% endif %}
+    
   </div>
-  <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
+  <span class="copyright-site">Universidad Nacional Arturo Jauretche ©${datetime.now().year}. Todos los derechos reservados</span>
   % endif
     <div class="colophon">
      
@@ -93,10 +82,9 @@
         ## which are not technically powered by OpenEdX.
         % if not hide_openedx_link:
         <ul class="logo-list">
-          <li>Powered by:</li>
           <li>
-            <a href="https://docs.tutor.edly.io" rel="noopener" target="_blank">
-              <img src="${static.url('images/tutor-logo.png')}" alt="Runs on Tutor" width="57" />
+            <a href="https://www.unaj.edu.ar/" rel="noopener" target="_blank">
+              <img src="${static.url('images/uni.png')}" alt="Runs on Tutor" width="130" />
             </a>
           </li>
           <li>
@@ -106,19 +94,9 @@
           </li>
         </ul>
       </div>
-      {% if INDIGO_FOOTER_NAV_LINKS %}
-      <nav class="nav-colophon" aria-label="${_('About')}">
-        <ol>
-            {% for link in INDIGO_FOOTER_NAV_LINKS %}
-            <li>
-              <a href="{{ link['url'] }}">{{ link['title'] }}</a>
-            </li>
-            {% endfor %}
-        </ol>
-      </nav>
-      {% endif %}
+     
     </div>
-    <span class="copyright-site">Copyrights ©${datetime.now().year}. All Rights Reserved.</span>
+    <span class="copyright-site">Universidad Nacional Arturo Jauretche ©${datetime.now().year}. Todos los derechos reservados.</span>
     % endif
       <div class="colophon">
        

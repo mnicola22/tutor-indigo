@@ -26,21 +26,19 @@ from openedx.core.djangoapps.user_authn.toggles import should_redirect_to_authn_
   <div class="main">
   % if mktg_site_enabled:
     <div class="mobile-nav-item hidden-mobile nav-item">
-      <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
+      <a href="${marketing_link('HOW_IT_WORKS')}">${_("Como funciona")}</a>
     </div>
     % if courses_are_browsable:
       <div class="mobile-nav-item hidden-mobile nav-item">
-        <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
+        <a href="${marketing_link('COURSES')}">${_("Cursos")}</a>
       </div>
     % endif
-    <div class="mobile-nav-item hidden-mobile nav-item">
-      <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
-    </div>
+  
   % endif
   % if allows_login:
     % if can_discover_courses:
       <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
-        <a href="/courses">${_('Discover courses')}</a>
+        <a href="/courses">${_('Descubrir Cursos')}</a>
       </div>
     %endif
   % endif
@@ -51,21 +49,21 @@ from openedx.core.djangoapps.user_authn.toggles import should_redirect_to_authn_
         % if allow_public_account_creation and not disable_register_button:
           % if should_redirect_to_authn_mfe:
             <div class="mobile-nav-item hidden-mobile nav-item">
-                <a class="register-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/register${login_query()}">${_("Register for free")}</a>
+                <a class="register-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/register${login_query()}">${_("Registrarse")}</a>
             </div>
           % else:
             <div class="mobile-nav-item hidden-mobile nav-item">
-                <a class="register-btn btn" href="/register${login_query()}">${_("Register for free")}</a>
+                <a class="register-btn btn" href="/register${login_query()}">${_("Registrarse")}</a>
             </div>
           % endif
         % endif
         % if should_redirect_to_authn_mfe:
           <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="sign-in-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/login${login_query()}">${_("Sign in")}</a>
+              <a class="sign-in-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/login${login_query()}">${_("Iniciar sesión")}</a>
           </div>
         % else:
           <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
+              <a class="sign-in-btn btn" href="/login${login_query()}">${_("Iniciar sesión")}</a>
           </div>
         % endif
       % endif
